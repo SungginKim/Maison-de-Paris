@@ -1,0 +1,364 @@
+.body, html{
+  background-color:#F9F6F1;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+}
+.navbar{
+  display: flex;
+  width: 100vw;
+  height: 70px;
+  background-color: #00376B;
+  align-items: baseline;
+  justify-content: space-between;
+}
+
+nav a{
+  text-decoration: none;
+  color:#F9F6F1;
+  font-family: poppins;
+  font-weight: 300;
+}
+
+nav ul{
+  list-style: none;
+  display: flex;
+  gap: 3rem;
+  padding: 0;
+  margin: 0;
+}
+
+.logo img{
+  height: 60px;
+  margin-left: 2rem;
+}
+
+.navbar .btn{
+  margin-right: 2rem;
+  background-color: #F9F6F1;
+  border-radius: 3px;
+  font-family: poppins;
+  color: #00376B;
+}
+
+/*Carousel*/
+
+.c-item{
+  height: 80vh;
+  background-color: #F9F6F1;
+}
+
+.c-image{
+  height: 100%;
+  object-fit: cover;
+  filter:brightness(0.6);
+}
+
+.carousel-inner h1{
+  font-size: 100px;
+  font-family: "DM Serif Text", serif;
+  color: #F9F6F1;
+}
+
+.carousel-caption{
+  height: 100%;
+  top: 30%;
+}
+/*Carousel*/
+
+/* .introduction{
+  height: 36vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 22rem;
+  gap: 0px;
+  background-color:#F9F6F1;
+  overflow: hidden;
+}
+
+.introduction p {
+  text-align: center;
+  font-family: poppins;
+  font-size: 18px;
+  color: #333333;
+} */
+
+.welcome{
+  height: 85vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color:#F9F6F1;
+  padding-top: 2rem;
+}
+
+.welcome h2{
+  font-family: "DM Serif Text", serif;
+  color:#00376B;
+}
+.welcome hr{
+  width: 70px;
+  height: 2px;
+  background-color: #00376B;
+  opacity: 1;
+  border: none;
+}
+
+.container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 1.5rem;
+}
+
+
+.introduction{
+  display: grid;
+  grid-template-rows: 360px 250px;
+  width: 1000px;
+  gap: 1rem
+}
+
+.introduction .row1{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: auto;
+
+  gap: 1rem;
+}
+
+.introduction .about{
+  background-color: #1A2B40;
+}
+
+.introduction .about > h2{
+  color: #F9F6F1;
+}
+
+.introduction .about > p{
+  color: #F9F6F1;
+}
+
+.introduction .booking{
+  background-color: white;
+}
+
+.introduction .booking >  h2{
+  color: #00376B;
+}
+
+.introduction .booking >  p{
+  color: #333333;
+}
+
+.introduction p{
+  font-family: 'poppins';
+  text-align: center;
+}
+
+.introduction .about,.booking{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 0 3rem;
+}
+
+.introduction .about .btn{
+  color: #F9F6F1;
+  border-color: #D4A637;
+  border-radius: 50px;
+}
+
+.introduction .booking .btn{
+  color: #333333;
+  border-color: #D4A637;
+  border-radius: 50px;
+}
+
+.introduction .row2{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto;
+  gap: 1rem;
+}
+
+.img1, .img2, .img3 {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensures the image scales correctly */
+  text-align: center;
+}
+
+
+
+
+/*Menu*/
+.menu{
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu h2{
+  font-family: "DM Serif Text", serif;
+  color: #333333;
+}
+
+.menu hr{
+  opacity: 1;
+  background-color: #D4A637;
+  height: 3px;
+  border: none;
+}
+
+.menu-items{
+  display: flex;
+  gap: 1.5rem;
+}
+
+.menu img{
+  width: 350px;
+  height: 500px;
+}
+
+.menu > p{
+  text-align: center;
+  margin-bottom: 50px;
+  font-family: poppins;
+  color: #333333;
+  font-size: 18px;
+  width: 1000px
+}
+
+.menu-items .food{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+.menu-items p {
+  font-family: poppins;
+  color: #333333;
+  font-weight: 500;
+  font-size: 18px;
+} 
+
+.menu > a{
+  border-color: #D4A637;
+  border-radius: 50px;
+  margin-top: 30px;
+}
+
+/*Private Dining*/
+
+.private-dining{
+  height: 90vh;
+  background-color: #1A2B40;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0 200px;
+}
+
+.private-dining h2{
+  color: #F9F6F1;
+  font-family: "DM Serif Text", serif;
+  font-size: 50px;
+}
+
+.private-dining hr{
+  width: 320px;
+  height: 2px;
+  background-color: #D4A637;
+  opacity: 1;
+  border: none;
+}
+
+.private-dining p{
+  color: #F9F6F1;
+  font-family: poppins;
+  font-size: 18px;
+  line-height: 2;
+}
+
+.private-dining .btn{
+  color: #F9F6F1;
+  border-color: #D4A637;
+  border-radius: 50px;
+  width: fit-content;
+}
+
+.private-dining img{
+  border-radius: 500px 500px 0px 0px;
+  height: 700px;
+}
+
+.private-dining-info{
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  width: 500px;
+}
+
+/*Events*/
+
+.events{
+  height: 100vh;
+  background-color: #F9F6F1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: column;
+}
+
+.events hr{
+  height: 2px;
+  background-color: #D4A637;
+  opacity: 1;
+  border: none;
+}
+
+.events h2{
+  font-family: "DM Serif Text", serif;
+  font-size: 50px;
+}
+
+.events img{
+  height: 500px;
+}
+
+.events-info{
+  display: flex;
+  width: 1300px;
+  justify-content: center;
+  align-items: center;
+  gap: 100px;
+}
+
+.events-info .christmas, .raclette{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 35px;
+  width: 500px;
+}
+
+.events-info h3{
+  font-family: splash;
+  font-weight: 500;
+}
+
+.events-info p{
+  width: 400px;
+  font-family: poppins;
+}
