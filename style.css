@@ -313,7 +313,7 @@ nav ul{
 /*Events*/
 
 .events{
-  height: 100vh;
+  height: 110vh;
   background-color: #F9F6F1;
   display: flex;
   align-items: center;
@@ -331,10 +331,20 @@ nav ul{
 .events h2{
   font-family: "DM Serif Text", serif;
   font-size: 50px;
+  margin-bottom: 30px;
+}
+
+.events .bg{
+  background-color: #1A2B40;
+  width: 100vw;
+  height: 60vh;
+  position: absolute;
+  transform: translate(0px, 250px);
 }
 
 .events img{
   height: 500px;
+  z-index: 10;
 }
 
 .events-info{
@@ -343,6 +353,7 @@ nav ul{
   justify-content: center;
   align-items: center;
   gap: 100px;
+  z-index: 10;
 }
 
 .events-info .christmas, .raclette{
@@ -356,9 +367,13 @@ nav ul{
 .events-info h3{
   font-family: splash;
   font-weight: 500;
+  color: #D4A637;
 }
 
 .events-info p{
   width: 400px;
   font-family: poppins;
+  color: #F9F6F1;
+  text-align: center;
+  line-height: 2;
 }
