@@ -1,0 +1,365 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body,html {
+  background-color: #F9F6F1;
+  height: 100%;
+  overflow: visible;
+  overflow-x: hidden;
+}
+
+
+.navbar-section{
+  position: sticky;
+  top: 0%;
+  z-index: 1000;
+  overflow: visible;
+  box-shadow: 0px 14px 12px 0px rgba(0,0,0,0.20);
+}
+
+.navbar{
+  height: 90px;
+  width: 100vw;
+  background-color: #1A2B40;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.navbar .hamburger-menu{
+  display: none;
+}
+
+nav ul{
+  list-style: none;
+  display: flex;
+  gap: 2rem
+}
+
+nav a{
+  text-decoration: none;
+  color:#F9F6F1;
+}
+
+.navbar img{
+  height: 80px;
+}
+
+nav a:hover{
+  color: #D4A637;
+}
+
+.navbar .btn{
+  margin-right: 2rem;
+  background-color: #F9F6F1;
+  border-radius: 0px;
+  border: none;
+  font-size: 15px;
+}
+
+.navbar .btn:active{
+  background-color: #d1d1d1;
+}
+
+.btn:hover{
+  background-color: #D4A637;
+}
+
+/*Sidebar - start*/
+
+.hamburger-menu{
+  padding-left: 30px;
+  cursor: pointer;
+}
+
+/*Sidebar - end*/
+
+/*Carousel - start*/
+
+.c-item{
+  height: 75vh;
+}
+
+.c-image{
+  height: 100%;
+  object-fit: cover;
+  filter:brightness(0.6);
+}
+
+/*Carousel - end*/
+
+/*Introduction - start*/
+
+.introduction{
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  height: 15vh;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  top: 5px;
+}
+
+.introduction .welcome-statement{
+  display: flex;
+  align-items: center;
+  gap: .5rem;
+}
+
+.introduction hr{
+  border: none;
+  background-color: #1A2B40;
+  height: 2px;
+  width: 40px;
+  opacity: 1;
+}
+
+.introduction h1{
+  font-size: 2rem;
+  font-family: "DM Serif Text", serif;
+  color: #1A2B40;
+  text-align: center;
+}
+
+.introduction p{
+  font-family:  "DM Serif Text", serif;
+  font-size: 1rem;
+  font-style: italic;
+  color: #333333;
+}
+
+/*Introduction - end*/
+
+/*About Us - start*/
+
+.about{
+  height: 85vh;
+  width: 100%;
+  padding: 7rem 0rem;
+}
+
+.about h2{
+  font-family: "DM Serif Text", serif;
+  color: #333333;
+  font-size: 2rem;
+  text-align: center;
+}
+
+.about hr{
+  border: none;
+  background-color: #D4A637;
+  height: 2px;
+  opacity: 1;
+  width: 30px;
+  position: relative;
+  top: -20px;
+}
+
+.about-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+.about .about-content{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+.about p{
+  font-family: "Nunito Sans", serif;
+  line-height: 65px;
+  text-align: center;
+  color: #333333;
+  font-size: clamp(14px, 1vw, 1vw);
+}
+
+.btn{
+  font-family: "Nunito Sans", serif;
+  color: #333333;
+  border-radius: 25px;
+  border-color: #D4A637;
+}
+/*About Us - end*/
+
+/*Private Dining - start*/
+
+.privateDining{
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.privateDining img{
+  width: 30%;
+  height: 100%;
+  object-fit: cover;
+  
+}
+
+.privateDining-bg{
+  background-color: #1A2B40;
+  height: 80%;
+  width: 95%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  padding: 1rem;
+
+}
+
+.privateDining-content{
+  flex: 1;
+  background-color: none;
+  border-style: solid;
+  border-color: #D4A637;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.privateDining-content p{
+  font-family: "Nunito Sans", serif;
+  line-height: 65px;
+  text-align: center;
+  color: #F9F6F1;
+  padding: 0 2rem;
+}
+
+.privateDining-title{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.privateDining-title h2{
+  font-family: "DM Serif Text", serif;
+  text-align: center;
+  color: #F9F6F1;
+  font-size: 2rem;
+}
+
+.privateDining-title hr{
+  border: none;
+  background-color: #D4A637;
+  height: 2px;
+  opacity: 1;
+  width: 30px;
+  position: relative;
+  top: -20px;
+}
+
+.privateDining .btn{
+  color: #F9F6F1;
+}
+
+/*Private Dining - end*/
+
+@media screen and (max-width: 1200px) {
+
+  body{
+    overflow-x: hidden;
+  }
+
+  /*Navbar - start*/
+  .nav-links{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    position: absolute;
+    left: 0px;
+    height: 100vh;
+    width: 45%;
+    top: 90px;
+    background-color: #1A2B40;
+    opacity: 1;
+    z-index: 100;
+    transform: translateX(-100%);
+    transition: transform 0.5s ease-in;
+    padding-bottom: 8rem;
+  }
+  .navbar .hamburger-menu {
+    display: block;
+    position: absolute; 
+    left: 10px;
+    top: 50%; 
+    transform: translateY(-50%); 
+    
+  }
+  .navbar{
+    justify-content: center;
+    position: relative;
+  }
+  .navbar .btn{
+    position: absolute; 
+    right: 10px;
+    top: 10%; 
+    transform: translatey(50%); 
+  }
+
+  /*Navbar - end*/
+
+  /*Private dining - start*/
+
+  .privateDining-img2{
+    display: none;
+  }
+
+  .privateDining-img1{
+    flex: 1;
+  }
+
+  .privateDining-content p{
+    font-size: 12px;
+    line-height: 50px;
+  }
+
+  .about p{
+    font-size: 12px;
+    line-height: 50px;
+  }
+
+  /*Private dining - end*/
+
+}
+
+@media screen and (max-width: 600px) {
+  .welcome-statement h1{
+    font-size: 1.5rem;
+  }
+
+  h2{
+    font-size: 1.5rem;
+  }
+
+  .privateDining{
+    height: 150vh;
+  }
+  .privateDining img{
+    flex: 1;
+    width: 100%;
+    height: auto;
+  }
+  .privateDining-bg{
+    flex-direction: column;
+    height: 100%;
+  }
+
+}
+
+.nav-active{
+  transform: translateX(0%);
+}
