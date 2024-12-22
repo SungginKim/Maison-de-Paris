@@ -215,7 +215,6 @@ nav a:hover{
   justify-content: center;
   gap: 1rem;
   padding: 1rem;
-
 }
 
 .privateDining-content{
@@ -266,6 +265,71 @@ nav a:hover{
 }
 
 /*Private Dining - end*/
+
+/*Highlights - start*/
+
+.highlights{
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: url(./img/highlights-bg.png);
+}
+
+.highlights .btn{
+  width: fit-content;
+  z-index: 100;
+  color: #F9F6F1;
+}
+
+.highlights-wrapper{
+  display: flex;
+  gap: 1rem;
+  overflow:hidden;
+  width: 89vw;
+  position: relative;
+  z-index: 100;
+}
+
+
+.highlights img{
+  width: 30rem;
+}
+
+.highlights .content p{
+  font-family: "Nunito Sans", serif;
+  color: #F9F6F1;
+}
+
+.highlights .content .date{
+  color: #D4A637;
+}
+
+.highlights h2{
+  font-family: "DM Serif Text", serif;
+  color: #333333;
+  font-size: 2rem;
+  text-align: center;
+}
+
+.highlights hr{
+  border: none;
+  background-color: #D4A637;
+  height: 2px;
+  opacity: 1;
+  width: 30px;
+  position: relative;
+  top: -20px;
+}
+
+.highlights-title{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/*Highlights - end*/
 
 @media screen and (max-width: 1200px) {
 
