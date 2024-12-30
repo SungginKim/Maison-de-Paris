@@ -77,45 +77,15 @@
       </div>
     </header>
 
-    <section class="menu-section">
-      <div class="menu">
-        <div class="menu-title title">
-          <h2>A taste of France in Seoul</h2>
-          <hr />
-        </div>
-        <div class="menu-slider col-11 mx-auto">
-          <div class="item">
-            <img src="./img/menu_mussels.png" alt="mussels with fries" />
-            <p>Mussels with Fries</p>
-          </div>
-          <div class="item">
-            <img src="./img/menu_onion soup.png" alt="onion soup" />
-            <p>Onion Soup</p>
-          </div>
-          <div class="item">
-            <img src="./img/menu_beef bourguignon.png" alt="beef bourguignon" />
-            <p>Beef bourguignon</p>
-          </div>
-          <div class="item">
-            <img src="./img/menu_mussels.png" alt="mussels with fries" />
-            <p>Mussels with Fries</p>
-          </div>
-          <div class="item">
-            <img src="./img/menu_onion soup.png" alt="onion soup" />
-            <p>Onion Soup</p>
-          </div>
-        </div>
-        <a href="#" class="btn">View Menu</a>
-      </div>
-    </section>
-
-    <section class="wine-section">
-      <div class="wine">
-        <img src="./img/wine bottles.png" alt="wine bottles" />
-        <div class="wine-content">
-          <div class="wine-title title">
-            <h2>Wine</h2>
-            <hr />
+    <section>
+      <div class="christmas2024Event">
+        <div class="christmas2024Content">
+          <div class="christmasMenu-title-container">
+            <div class="christmasMenu-title title">
+              <h2>Christmas 2024</h2>
+              <hr />
+            </div>
+            <p>12.24.24 - 12.25.24 / 17:00 ~ 22:00</p>
           </div>
           <p>
             이것은 임시 텍스트입니다. 내용을 여기에 삽입하세요. 한국어로 작성된
@@ -123,8 +93,41 @@
             디자인에 맞게 조정하세요.이것은 임시 텍스트입니다. 내용을 여기에
             삽입하세요. 한국어로 작성된 예시 문장이 필요할 때 사용하세요. 적절한
             길이와 구성을 선택하여 디자인에 맞게 조정하세요.
+            <br />
+            <br />
+            <span style="font-style: italic; font-weight: bold"
+              >The Wines (125ml glass): <br
+            /></span>
+            Terrenus Branco, 2019 <br />
+            Terrenus Amphorae 'Vinha da Ammaia' Branco,2021 <br />
+            Terrenus Vinhas Velhas Reserva Branco, 2022 <br />
+            Terrenus Tinto, 2019 <br />
+            Terrenus Reserva Vinhas Velhas Tinto, 2017 <br />
+            Terrenus Amphorae 'Vinha da Ammaia' Tinto, 2022 <br />
+
+            <br />
+
+            내용을 여기에 삽입하세요. 한국어로 작성된 예시 문장이 필요할 때
+            사용하세요. 적절한 길이와 구성을 선택하여 디자인에 맞게 조정하세요.
           </p>
-          <a href="#" class="btn">View Wine</a>
+        </div>
+        <div class="christmas2024Menu-slider">
+          <img
+            src="./img/christmas24Menu/christmas24Menu-1.png"
+            alt="christmas 2024 English Main Menu"
+          />
+          <img
+            src="./img/christmas24Menu/christmas24Menu-2.png"
+            alt="christmas 2024 English Wine Menu"
+          />
+          <img
+            src="./img/christmas24Menu/christmas24Menu-3.png"
+            alt="christmas 2024 Korean Main Menu"
+          />
+          <img
+            src="./img/christmas24Menu/christmas24Menu-4.png"
+            alt="christmas 2024 Korean Wine Menu"
+          />
         </div>
       </div>
     </section>
@@ -199,36 +202,11 @@
 
     <script>
       $(document).ready(function () {
-        $(".menu-slider").slick({
-          arrows: true,
+        $(".christmas2024Menu-slider").slick({
+          dots: true,
           infinite: false,
-          slidesToShow: 3,
+          slidesToShow: 1,
           slidesToScroll: 1,
-          responsive: [
-            {
-              breakpoint: 1024,
-              settings: {
-                slidesToShow: 3,
-                slidesToScroll: 1,
-                infinite: false,
-                dots: false,
-              },
-            },
-            {
-              breakpoint: 600,
-              settings: {
-                slidesToShow: 2,
-                slidesToScroll: 1,
-              },
-            },
-            {
-              breakpoint: 480,
-              settings: {
-                slidesToShow: 1,
-                slidesToScroll: 1,
-              },
-            },
-          ],
         });
       });
     </script>
