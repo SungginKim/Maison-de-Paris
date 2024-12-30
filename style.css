@@ -93,10 +93,6 @@ nav a:hover{
   color: #D4A637;
 }
 
-nav a:active{
-  color: #D4A637;
-}
-
 .navbar .btn{
   margin-right: 2rem;
   background-color: #F9F6F1;
