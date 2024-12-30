@@ -382,7 +382,7 @@ footer .copyright{
   display: flex;
   justify-content: center;
   margin: auto;
-  gap: 1.5%;
+  gap: 1rem;
 }
 
 .ourTeam img{
@@ -727,6 +727,52 @@ footer .copyright{
 
 /* ******************  PRIVATE DINING/ APPLICATION FORM - END  ****************** */
 
+
+/* ******************  CONTACT PAGE - START  ****************** */
+
+#contact{
+  display: flex;
+  min-height: 100vh;
+  justify-content: center;
+  gap: 3rem;
+  margin: 0 3rem;
+}
+
+#contact i{
+  font-size: larger;
+}
+
+.contact-content{
+  display: grid;
+  grid-template-columns: 1fr;
+  height: fit-content;
+  gap: 1rem;
+}
+
+.contact-item{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: .5rem;
+  flex-direction: column;
+  max-height: fit-content;
+}
+
+.contact-content p {
+  line-height: normal;
+}
+
+.hours > p{
+  line-height: 40px;
+}
+
+.maps{
+  width: 70%;
+  max-height: 500px;
+}
+
+/* ******************  CONTACT PAGE - END  ****************** */
+
 @media screen and (max-width: 1200px) {
 
   body{
@@ -863,6 +909,29 @@ footer .copyright{
   }
 
   /* APPLICATION FORM - END */
+
+  /* HIGHLIGHTS / CHRISTMAS 2024 EVENT PAGE - START */
+
+  .christmas2024Event{
+    grid-template-columns: 80vw;
+    grid-template-rows: repeat(2, 1fr);
+    gap: 5%;
+  }
+
+
+
+  /* CONTACT PAGE - START */
+
+  #contact{
+    flex-direction: column;
+  }
+
+  .maps{
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+
+  /* CONTACT PAGE - END */
 
 
 }
