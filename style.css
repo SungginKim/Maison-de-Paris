@@ -127,7 +127,21 @@ nav a:hover{
 .c-image{
   height: 100%;
   object-fit: cover;
-  filter:brightness(0.6);
+  filter:brightness(0.9);
+}
+.carousel-inner .carousel-item {
+  opacity: 0;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: block;
+  position: absolute;
+}
+.carousel-inner .carousel-item:first-of-type {
+  position: relative;
+}
+.carousel-inner .active {
+  opacity: 1;
 }
 
 /*Carousel - end*/
@@ -550,6 +564,18 @@ footer .copyright{
 .wine-content .btn{
   color: #F9F6F1;
   width: fit-content;
+}
+
+.menu-slider{
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity .5s ease;
+  -webkit-transition: opacity .5s ease;
+}
+
+.menu-slider.slick-initialized {
+  visibility: visible;
+  opacity: 1;    
 }
 
 
